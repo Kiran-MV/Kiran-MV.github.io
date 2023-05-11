@@ -7,7 +7,7 @@
         
         <script>
             var sessionId = "00D90000000Kcvd  !ARgAQFTk8_qfg30FPu.NXhd8FdkHr3jFf0RJEdHIgF1OXd5KKh2I7b_2TFxm.voMU5sXRXaL9FQHY6Jdz8McN.l0kv0sTXob";
-            
+            var aOrigin = "https://kiranmutturu-dev-ed.lightning.force.com/";
             $Lightning.use("c:LightningOut", function() {
                 $Lightning.createComponent("c:helloWorldLWC",
                 {},
@@ -16,8 +16,8 @@
                     console.log("Component created!");
                 },
                 {
-                    "accessToken": sessionId,
-                    "Access-Control-Allow-Origin":kiranmutturu-dev-ed.lightning.force.com
+                    "accessToken" : sessionId,
+                    "Access-Control-Allow-Origin" : aOrigin
                     
                 });
             });
