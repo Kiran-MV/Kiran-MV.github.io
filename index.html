@@ -1,3 +1,24 @@
 <html>
-Hello World to this page
+    <head>
+        <script src="https://kiranmutturu-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
+    </head>
+    <body>
+        <div id="lightning"></div>
+        
+        <script>
+            var sessionId = "00D90000000Kcvd  !ARgAQFTk8_qfg30FPu.NXhd8FdkHr3jFf0RJEdHIgF1OXd5KKh2I7b_2TFxm.voMU5sXRXaL9FQHY6Jdz8McN.l0kv0sTXob";
+            
+            $Lightning.use("c:MyApp", function() {
+                $Lightning.createComponent("c:ContactList",
+                {},
+                "lightning",
+                function(cmp) {
+                    console.log("Component created!");
+                },
+                {
+                    "accessToken": sessionId
+                });
+            });
+        </script>
+    </body>
 </html>
