@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Birthday invitation and RSVP page" />
-    <title>Birthday Invitation RSVP</title>
+    <meta name="description" content="Krishang's birthday invitation and RSVP page" />
+    <title>Krishang's Birthday RSVP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -25,47 +25,51 @@
         </div>
 
         <div class="hero-copy">
-          <p class="eyebrow">You are invited</p>
-          <h1 id="party-title">Join us for Aarav's birthday party</h1>
-          <p class="lede">Cake, games, music, and a bright little celebration with family and friends.</p>
+          <p class="eyebrow">Level 12 unlocked</p>
+          <h1 id="party-title">You are invited to Krishang's birthday party</h1>
+          <p class="lede">Join us for an arcade-style birthday celebration at Children's Party Laser Dome - Kungsholmen.</p>
 
           <div class="party-details" aria-label="Party details">
             <div>
               <span>Date</span>
-              <strong>Saturday, 21 September</strong>
+              <strong>Sunday, 20 September</strong>
             </div>
             <div>
               <span>Time</span>
-              <strong>4:00 PM to 7:00 PM</strong>
+              <strong>4 PM onwards</strong>
             </div>
             <div>
               <span>Place</span>
-              <strong>Celebration Hall, Your City</strong>
+              <strong>Laser Dome - Kungsholmen</strong>
             </div>
           </div>
 
           <div class="hero-actions">
             <a class="button primary" href="#rsvp">RSVP now</a>
-            <a class="button secondary" href="https://maps.google.com/?q=Celebration%20Hall" target="_blank" rel="noreferrer">Open map</a>
+            <a class="button secondary" href="https://maps.app.goo.gl/rgFTeQWTQB9iYtcZ7" target="_blank" rel="noreferrer">Open map</a>
           </div>
         </div>
+
+        <figure class="invitation-poster">
+          <img src="assets/krishang-birthday-invite.svg" alt="Krishang's birthday party invitation poster" />
+        </figure>
       </section>
 
       <section class="details-grid" aria-label="What to expect">
         <article>
           <span class="icon">01</span>
           <h2>Games</h2>
-          <p>Fun activities planned for kids, with room for everyone to join in.</p>
+          <p>Laser Dome fun and game-time energy for the children.</p>
         </article>
         <article>
           <span class="icon">02</span>
           <h2>Food</h2>
-          <p>Snacks, dinner, soft drinks, and birthday cake after the games.</p>
+          <p>Party snacks, birthday treats, and time to celebrate together.</p>
         </article>
         <article>
           <span class="icon">03</span>
           <h2>Memories</h2>
-          <p>Bring your smiles. We will capture photos throughout the evening.</p>
+          <p>Bring your smiles for Krishang's level 12 birthday celebration.</p>
         </article>
       </section>
 
@@ -73,7 +77,7 @@
         <div class="rsvp-intro">
           <p class="eyebrow">Kindly reply</p>
           <h2 id="rsvp-title">Can you make it?</h2>
-          <p>Please send your response so we can plan food, games, and seating.</p>
+          <p>Please send your response so we can plan the party.</p>
         </div>
 
         <form class="rsvp-form" id="rsvp-form" method="POST">
@@ -96,18 +100,6 @@
             <label class="choice"><input type="radio" name="attendance" value="Yes" required /> Yes, we will be there</label>
             <label class="choice"><input type="radio" name="attendance" value="No" /> Sorry, we cannot make it</label>
           </fieldset>
-
-          <label>
-            Number of guests
-            <select name="guests" required>
-              <option value="" selected disabled>Select guests</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5+</option>
-            </select>
-          </label>
 
           <label>
             Message
