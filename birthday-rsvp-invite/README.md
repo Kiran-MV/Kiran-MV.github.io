@@ -14,31 +14,23 @@ Edit `index.html` and update:
 
 ## Connect RSVP responses for free
 
-### Option 1: FormSubmit
+### Current setup: FormSubmit
 
-1. Replace `your-email@example.com` with your email address in this endpoint:
+The RSVP form is currently connected to FormSubmit:
 
-   ```txt
-   https://formsubmit.co/your-email@example.com
-   ```
+```js
+const RSVP_ENDPOINT = "https://formsubmit.co/kiranmutturu@gmail.com";
+```
 
-2. Open `script.js` and set:
+After the first RSVP submission, FormSubmit will send an activation email to that address. Confirm it once, then future RSVP submissions will be emailed to you.
 
-   ```js
-   const RSVP_ENDPOINT = "https://formsubmit.co/your-email@example.com";
-   ```
-
-3. Deploy the site and submit one RSVP yourself.
-4. FormSubmit will send an activation email. Confirm it once.
-5. Future RSVP submissions will be emailed to you.
-
-### Option 2: Formspree
+### Alternative: Formspree
 
 1. Create a free form at https://formspree.io/.
 2. Copy the form endpoint.
 3. Paste it into `RSVP_ENDPOINT` in `script.js`.
 
-### Option 3: Google Forms
+### Alternative: Google Forms
 
 Create a Google Form for RSVP responses and replace the `RSVP now` link in `index.html` with the Google Form link. This is the simplest way to collect responses in a spreadsheet.
 
