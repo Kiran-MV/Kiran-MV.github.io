@@ -323,6 +323,35 @@ h1 {
   line-height: 1.55;
 }
 
+.parent-info {
+  margin: 18px 0;
+  border: 2px solid rgba(37, 48, 59, 0.14);
+  border-left: 8px solid var(--coral);
+  border-radius: 8px;
+  padding: clamp(22px, 4vw, 32px);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 16px 40px rgba(63, 45, 22, 0.12);
+}
+
+.parent-info h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.parent-info ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.parent-info li {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .rsvp-section {
   display: grid;
   grid-template-columns: minmax(220px, 0.72fr) minmax(320px, 1.28fr);
