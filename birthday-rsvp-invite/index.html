@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Birthday invitation and RSVP page" />
+    <title>Birthday Invitation RSVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="invite-hero" aria-labelledby="party-title">
+        <div class="hero-art" aria-hidden="true">
+          <span class="balloon balloon-one"></span>
+          <span class="balloon balloon-two"></span>
+          <span class="balloon balloon-three"></span>
+          <span class="confetti confetti-one"></span>
+          <span class="confetti confetti-two"></span>
+          <span class="confetti confetti-three"></span>
+          <span class="star star-one">*</span>
+          <span class="star star-two">*</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">You are invited</p>
+          <h1 id="party-title">Join us for Aarav's birthday party</h1>
+          <p class="lede">Cake, games, music, and a bright little celebration with family and friends.</p>
+
+          <div class="party-details" aria-label="Party details">
+            <div>
+              <span>Date</span>
+              <strong>Saturday, 21 September</strong>
+            </div>
+            <div>
+              <span>Time</span>
+              <strong>4:00 PM to 7:00 PM</strong>
+            </div>
+            <div>
+              <span>Place</span>
+              <strong>Celebration Hall, Your City</strong>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#rsvp">RSVP now</a>
+            <a class="button secondary" href="https://maps.google.com/?q=Celebration%20Hall" target="_blank" rel="noreferrer">Open map</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-grid" aria-label="What to expect">
+        <article>
+          <span class="icon">01</span>
+          <h2>Games</h2>
+          <p>Fun activities planned for kids, with room for everyone to join in.</p>
+        </article>
+        <article>
+          <span class="icon">02</span>
+          <h2>Food</h2>
+          <p>Snacks, dinner, soft drinks, and birthday cake after the games.</p>
+        </article>
+        <article>
+          <span class="icon">03</span>
+          <h2>Memories</h2>
+          <p>Bring your smiles. We will capture photos throughout the evening.</p>
+        </article>
+      </section>
+
+      <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="rsvp-intro">
+          <p class="eyebrow">Kindly reply</p>
+          <h2 id="rsvp-title">Can you make it?</h2>
+          <p>Please send your response so we can plan food, games, and seating.</p>
+        </div>
+
+        <form class="rsvp-form" id="rsvp-form" method="POST">
+          <input type="hidden" name="_subject" value="Birthday RSVP response" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label>
+            Your name
+            <input name="name" type="text" autocomplete="name" required placeholder="Enter your name" />
+          </label>
+
+          <label>
+            Email or phone
+            <input name="contact" type="text" autocomplete="email" required placeholder="Where can we reach you?" />
+          </label>
+
+          <fieldset>
+            <legend>Will you attend?</legend>
+            <label class="choice"><input type="radio" name="attendance" value="Yes" required /> Yes, we will be there</label>
+            <label class="choice"><input type="radio" name="attendance" value="No" /> Sorry, we cannot make it</label>
+          </fieldset>
+
+          <label>
+            Number of guests
+            <select name="guests" required>
+              <option value="" selected disabled>Select guests</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Food allergies, wishes, or a note"></textarea>
+          </label>
+
+          <button class="button primary submit-button" type="submit">Send RSVP</button>
+          <p class="form-note" id="form-note" role="status">Add your free RSVP endpoint in <code>script.js</code> before sharing.</p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
